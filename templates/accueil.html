@@ -7,10 +7,10 @@
 {% block content %}
 <h1>Bienvenue en France</h1>
 
-<p id=info>Today is {{ context['day'] }} / {{ context['date'] }}.</p>
+<p id=info>Test</p>
 <!-- Rajouter le paragraphe-->
 
-<img src="images_templates/france_background.jpg">
+<image src="{{url_for('static',filename = 'images_templates/france_background.jpg')}}" >
 
 
 {% endblock %}

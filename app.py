@@ -34,6 +34,13 @@ def Contact():
     app.logger.debug('serving root URL /')
     return render_template('contact.html')
 
+@app.route('/VillesInd')
+def ville_indiv():
+    app.logger.debug('serving root URL /')
+    return render_template('ville_indiv.html')
+
+
+
 if __name__ == "__main__":
 
     app.run()

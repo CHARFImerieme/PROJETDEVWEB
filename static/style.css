@@ -1,5 +1,5 @@
 body#Acceuil {
-  background-image: url('images/france_background.jpg');
+  background-image: url('/static/images_templates/france_background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
