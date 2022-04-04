@@ -1,1 +1,16 @@
+{% extends "base.html" %}
+{# Have a look at base.html as well to understand how templating works ;)  #}
 
+{% set page_title = 'Acceuil'%}
+{% set body_id = 'Acceuil' %}
+
+{% block content %}
+<h1>Bienvenue en France</h1>
+
+<p id=info>Today is {{ context['day'] }} / {{ context['date'] }}.</p>
+<!-- Rajouter le paragra
+<picture>
+  <img src="images/france_background.jpg">
+</picture>
+
+{% endblock %}
