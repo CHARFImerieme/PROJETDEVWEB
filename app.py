@@ -19,7 +19,7 @@ cmds.init_app(app)                                                        #
 app.register_blueprint(SITE_API, url_prefix='/api')                       #
 # ↑ DO NOT MODIFY THIS PART ↑ #############################################
 
-@app.route('/Acceuil')
+@app.route('/')
 def Acceuil():
     app.logger.debug('serving root URL /')
     return render_template('accueil.html')
