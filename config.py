@@ -2,11 +2,8 @@
 
 import os
 
-from datetime import datetime
-
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 DB_FILE = os.path.join(BASEDIR, 'database.sqlite')
-
 
 class Config:
     DEBUG = False
@@ -25,53 +22,45 @@ class Development(Config):
 
 
 # Initial data to populate the DB with
-class Fields:
-    bio = 'biology'
-    it = 'information science'
-    logic = 'logic'
-    math = 'mathematics'
-    physics = 'physics'
+class info:
+    gastro = 'Gastronomie'
+    cu = 'Culture'
+    hist = 'Historique'
+    act = 'Activités'
 
 
 USERS = [
-    {'name': 'Katherine Johnson',
-     'birthday': datetime.fromisoformat('1918-08-26'),
-     'fields': [Fields.math, Fields.physics], 'wikiid': 25568315,
+    {'name': 'Paris',
+     'Info': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Alan Turing',
-     'birthday': datetime.fromisoformat('1912-06-23'),
-     'fields': [Fields.math, Fields.it], 'wikiid': 1208,
+    {'name': 'Lyon',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Kurt Gödel',
-     'birthday': datetime.fromisoformat('1906-04-28'),
-     'fields': [Fields.logic, Fields.math], 'wikiid': 16636,
+    {'name': 'Marseilles',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'John Neumann',
-     'birthday': datetime.fromisoformat('1903-12-28'),
-     'fields': [Fields.math, Fields.it], 'wikiid': 15942,
+    {'name': 'Bordeaux',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Alexander Grothendieck',
-     'birthday': datetime.fromisoformat('1928-03-28'),
-     'fields': [Fields.math], 'wikiid': 2042,
+    {'name': 'Toulouse',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Marie Skłodowska-Curie',
-     'birthday': datetime.fromisoformat('1867-11-07'),
-     'fields': [Fields.physics], 'wikiid': 20408,
+    {'name': 'Nice',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Hedy Lamarr',
-     'birthday': datetime.fromisoformat('1914-01-01'),
-     'fields': [Fields.it, Fields.math], 'wikiid': 170982,
+    {'name': 'Bretagne',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Rachel Louise Carson',
-     'birthday': datetime.fromisoformat('1947-05-27'),
-     'fields': [Fields.bio], 'wikiid': 000000,
+    {'name': 'Chamonix Mont Blanc',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Maud Leonora Menten',
-     'birthday': datetime.fromisoformat('1879-03-20'),
-     'fields': [Fields.bio], 'wikiid': 000000,
+    {'name': 'Strasbourg',
+     'fields': [info.gastro, info.cu, info.hist, info.act],
      },
+     {'name': 'Lille',
+      'fields': [info.gastro, info.cu, info.hist, info.act],
+      },
 ]
-
 
 class WebDevException(Exception):
     pass
