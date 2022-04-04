@@ -7,10 +7,12 @@
 {% block content %}
 <h1>Bienvenue en France</h1>
 
-<p id=info>Test</p>
+<div class="one">
+  <p id=info>Test</p>
 <!-- Rajouter le paragraphe-->
-
-<image src="{{url_for('static',filename = 'images_templates/france_background.jpg')}}" >
-
+</div>
+<div class="two">
+  <image class="accueil" src="{{url_for('static',filename = 'images_templates/france_background.jpg')}}" >
+</div>
 
 {% endblock %}
