@@ -4,6 +4,11 @@ body#Acceuil {
   background-attachment: fixed;
   background-size: cover;
 }
+
+div.two{
+  float:right;
+}
+
 ul#navbarMenu {
   list-style-type: none;
   margin: 0;
