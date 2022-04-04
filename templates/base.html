@@ -9,10 +9,10 @@
   <body id= "{{body_id | default('')}}">
     <ul id="navbarMenu">
       <li class="navItem"><a href="{{ url_for('Acceuil') }}">Home</a></li>
-      <li class="navItem"><a href="{{ url_for('Villes') }}">Users</a></li>
-      <li class="navItem"><a href="{{ url_for('Contact') }}">About</a></li>
+    <!--   <li class="navItem"><a href="{{ url_for('Villes') }}">Users</a></li>
+      <li class="navItem"><a href="{{ url_for('Contact') }}">About</a></li>-->
       <li class="navItem" style="float:right">
-        <form class="" method="get" action="{{ url_for('users_page') }}">
+        <form class="" method="get" action="{{ url_for('ville_indiv') }}">
           <input class="" placeholder="Recherche" type="text" name="pattern">
           <datalist id="villes">
             <option>Paris</option>
