@@ -7,16 +7,19 @@
 {% block content %}
 <h1>Bienvenue en France</h1>
 
-<p id=info> De Paris à Marseilles, en passant par les Pyrénées ou les Alpes, la France offre une variété de paysages et d’expériences inégalée.
-Sa gastronomie, son Histoire et sa culture en ont fait la destination la plus visitée au monde.
-elle offre toujours plus de possibilités d'activités ainsi que des choses à découvrir./ </p>
+<div class= container>
+  <div class="one">
+    <p id=info> De Paris à Marseilles, en passant par les Pyrénées ou les Alpes, la France offre une variété de paysages et d’expériences inégalée.
+      Sa gastronomie, son Histoire et sa culture en ont fait la destination la plus visitée au monde.
+      elle offre toujours plus de possibilités d'activités ainsi que des choses à découvrir./ </p>
 
-<p> Grâce à ce site, vous êtes capables de chercher votre destination préférée et découvrir tous ces secrets.
-Vous aurez le choix entre une panoplie d'informations: Culture, Historique, Activités à faire, Gastronomie...
-Vous serez plus que prêt pour votre futur voyage ;) ;) </p>
+    <p> Grâce à ce site, vous êtes capables de chercher votre destination préférée et découvrir tous ces secrets.
+      Vous aurez le choix entre une panoplie d'informations: Culture, Historique, Activités à faire, Gastronomie...
+      Vous serez plus que prêt pour votre futur voyage ;) ;) </p>
+    </div>
 
-
-<image src="{{url_for('static',filename = 'images_templates/france_background.jpg')}}" >
-
-
+    <div class="two">
+      <image src="{{url_for('static',filename = 'images_templates/france_background.jpg')}}" >
+    </div>
+</div>
 {% endblock %}
