@@ -13,7 +13,7 @@
       <li class="navItem"><a href="{{ url_for('Contact') }}">About</a></li>-->
       <li class="navItem" style="float:right">
         <form class="" method="get" action="{{ url_for('ville_indiv') }}">
-          <input class="" placeholder="Recherche" type="text" name="pattern">
+          <input list="villes" class="" placeholder="Recherche" type="text" name="pattern">
           <datalist id="villes">
             <option>Paris</option>
             <option>Lyon</option>
