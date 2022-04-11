@@ -11,8 +11,7 @@ from config import USERS
 from api import SITE_API
 
 # ↓ DO NOT MODIFY THIS PART ↓ #############################################
-# init flask app instance         SERS = [
-    {'name': 'Par                                        #
+# init flask app instance                                                 #
 app = Flask(__name__)                                                     #
 # setup with the configuration provided by the user / environment         #
 app.config.from_object('config.Development')                              #
