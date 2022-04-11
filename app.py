@@ -7,10 +7,12 @@ from flask import request, make_response, render_template
 import data
 import cmds
 
+from config import USERS
 from api import SITE_API
 
 # ↓ DO NOT MODIFY THIS PART ↓ #############################################
-# init flask app instance                                                 #
+# init flask app instance         SERS = [
+    {'name': 'Par                                        #
 app = Flask(__name__)                                                     #
 # setup with the configuration provided by the user / environment         #
 app.config.from_object('config.Development')                              #
@@ -27,7 +29,7 @@ def Acceuil():
 @app.route('/Villes')
 def Villes():
     app.logger.debug('serving root URL /')
-    return render_template('ville.html')
+    return render_template('ville.html',users=USERS)
 
 @app.route('/Contact')
 def Contact():
