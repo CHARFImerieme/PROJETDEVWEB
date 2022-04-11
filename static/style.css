@@ -79,3 +79,9 @@ div.info {
     padding: 6px 16px;
     background-color: #DBF9FC;
 }
+
+img{
+ max-width: 150px;
+ max-height: 150px;
+ object-fit: contain;
+}

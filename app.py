@@ -25,7 +25,7 @@ def Accueil():
     app.logger.debug('serving root URL /')
     return render_template('accueil.html')
 
-@app.route('/Villes')
+@app.route('/Villes') 
 def Villes():
     app.logger.debug('serving users URL /users/')
     # The request contains an arguments in the query string
