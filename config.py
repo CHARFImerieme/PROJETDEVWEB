@@ -3,13 +3,13 @@
 import os
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
-DB_FILE = os.path.join(BASEDIR, 'database.sqlite')
+#DB_FILE = os.path.join(BASEDIR, 'database.sqlite')
 
 class Config:
     DEBUG = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    DB_FILE = DB_FILE
-    SQLALCHEMY_DATABASE_URI = f'sqlite:///{DB_FILE}'
+    #DB_FILE = DB_FILE
+    #SQLALCHEMY_DATABASE_URI = f'sqlite:///{DB_FILE}'
 
 
 class Production(Config):
@@ -42,7 +42,7 @@ USERS = [
      'Info': [info.gastro, info.cu, info.hist, info.act],
      },
     {'name': 'Toulouse',
-     'Info': [info.gastro, info.cu, info.hist, info.act],
+     'Info': [info.gastro, info.cu,info.hist, info.act],
      },
     {'name': 'Nice',
      'Info': [info.gastro, info.cu, info.hist, info.act],
@@ -56,7 +56,7 @@ USERS = [
     {'name': 'Strasbourg',
      'Info': [info.gastro, info.cu, info.hist, info.act],
      },
-     {'name': 'Lille',
+     {'name': ' Écrire votre commentaire ici!Lille',
       'Info': [info.gastro, info.cu, info.hist, info.act],
       },
 ]

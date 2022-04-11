@@ -26,7 +26,7 @@ _mkvenv () {
   local green=$(tput setaf 2)
   local yellow=$(tput setaf 3)
   local r=$(tput sgr0)
-  printf "Setting up python virtualenv in:\n“${VENV}”\n"
+  printf "Setting up Écrire votre commentaire ici! python virtualenv in:\n“${VENV}”\n"
   _is_exe python3 || exit 1
   python3 -m venv "${VENV}" || { echo "${red}Error seting up venv${r}"; exit 1; }
   printf "${green}→ installing:${r} ${yellow}wheel${r}…"
