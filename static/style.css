@@ -17,6 +17,39 @@ ul#navbarMenu {
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
 }
+ul#navbarCity {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #6c6eee;
+}
+
+li.navCity a, form {
+  display: block;
+  color: #010101;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.navCity a.active {
+  color: white;
+  background-color: #5255ef;
+}
+
+li.navCity{
+  float: left;
+}
+
+li.navCity form {
+  padding: 6px 16px;
+}
+
+li.navCity a:hover:not(.active) {
+  background-color: #5255ef;
+}
 
 li.navItem {
   float: left;
@@ -24,7 +57,7 @@ li.navItem {
 
 li.navItem a, form {
   display: block;
-  color: #666;
+  color: #010101;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

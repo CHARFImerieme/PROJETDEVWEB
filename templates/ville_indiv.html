@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
-{% set page_title = 'Villes'%}
+{% set page_title = 'Ville' %}
 {% set body_id = 'Villes' %}
 
 {% block content %}
+<ul id="navbarCity">
+  <li class="navCity"><a href="{{ url_for('Acceuil') }}">Gastronomie</a></li>
+  <li class="navCity"><a href="{{ url_for('Villes') }}">Culture</a></li>
+  <li class="navCity"><a href="{{ url_for('Contact') }}">Historique</a></li>
+  <li class="navCity"><a href="{{ url_for('Acceuil') }}">Activité recommandées</a></li>
 {% endblock %}
