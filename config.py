@@ -47,7 +47,7 @@ USERS = [
     {'name': 'Nice',
      'Info': [info.gastro, info.cu, info.hist, info.act],
      },
-    {'name': 'Bretagne',
+    {'name': 'Saint Malo',
      'Info': [info.gastro, info.cu, info.hist, info.act],
      },
     {'name': 'Chamonix Mont Blanc',
@@ -56,7 +56,7 @@ USERS = [
     {'name': 'Strasbourg',
      'Info': [info.gastro, info.cu, info.hist, info.act],
      },
-     {'name': ' Écrire votre commentaire ici!Lille',
+     {'name': 'Lille',
       'Info': [info.gastro, info.cu, info.hist, info.act],
       },
 ]
