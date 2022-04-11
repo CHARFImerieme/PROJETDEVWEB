@@ -25,7 +25,7 @@ def Acceuil():
     app.logger.debug('serving root URL /')
     return render_template('accueil.html')
 
-@app.route('/Villes')
+@app.route('/Villes') 
 def Villes():
     app.logger.debug('serving root URL /')
     return render_template('ville.html',users=USERS)
