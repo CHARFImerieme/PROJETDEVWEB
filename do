@@ -36,19 +36,19 @@ _mkvenv () {
   printf " ${green}done!${r}\n"
 }
 
-_db_init () {
+#_db_init () {
   # Database init if needed
-  DB_FILE="$(python3 -c'from config import DB_FILE; print(DB_FILE)')"
-  if [ ! -e ${DB_FILE} ];then
-    printf "Init sqlite database…"
-    "${VENV}/bin/flask" create-db && "${VENV}/bin/flask" populate-db \
-      || { echo " Failed to init database!"; exit 1; }
-          echo " Done!"
-  fi
-}
+#  DB_FILE="$(python3 -c'from config import DB_FILE; print(DB_FILE)')"
+#  if [ ! -e ${DB_FILE} ];then
+#    printf "Init sqlite database…"
+#    "${VENV}/bin/flask" create-db && "${VENV}/bin/flask" populate-db \
+#      || { echo " Failed to init database!"; exit 1; }
+#          echo " Done!"
+#  fi
+#}
 
 serve () {
-  _db_init
+  #_db_init
   #FLASK_APP=app ${VENV}/bin/flask run
   "${PYTHON3}" "${ROOT}/app.py"
 }
