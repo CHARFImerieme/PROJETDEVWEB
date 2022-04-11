@@ -27,7 +27,13 @@ def Acceuil():
 
 @app.route('/Villes') 
 def Villes():
-    app.logger.debug('serving root URL /')
+    app.logger.debug('serving users URL /users/')
+    # The request contains an arguments in the query string
+    if request.args:
+        if search(request) !=0:
+            return render_template('ville.html', users=search(request))
+        else:
+            return make_response('No result found',400)
     return render_template('ville.html',users=USERS)
 
 @app.route('/Contact')
@@ -40,6 +46,17 @@ def ville_indiv():
     app.logger.debug('serving root URL /')
     return render_template('ville_indiv.html')
 
+def search(request):
+    app.logger.debug(request.args)
+    pattern=request.args.get('pattern')
+    users=USERS
+    found_user = []
+    for user in users :
+        if pattern.upper() in user['name'].upper():
+            found_user.append(user)
+    if not found_user:
+        found_user = 0
+    return found_user
 
 
 if __name__ == "__main__":
