@@ -85,3 +85,19 @@ img{
  max-height: 150px;
  object-fit: contain;
 }
+
+footer{
+  background-color: #5255ef;
+}
+
+div.container div{
+  display: inline-block;
+  width: 49%
+}
+
+div.container  div.leftbox{
+  vertical-align: top;
+}
+
+
+}

@@ -4,17 +4,25 @@
 {% set page_title = 'Villes'%}
 {% set body_id = 'Villes' %}
 
-{% block content %}
-<h1>Liste de villes françaises</h1>
+{% block content  %}
+<h1>Découvrez les plus belles villes de France : </h1>
 
 <div class= container>
-  <h1>Les villes:</h1>
-       <ul>
-       {% for user in users %}
-         <li><a href="{{ url_for('ville_indiv',name=user.name) }}">{{user.name}}</a>
-           <img src="{{url_for('static',filename=user.photo)}}">
 
-         </li>
-       {% endfor %}
-</div>
+  <div class="boxleft ">
+       {% for user in users %}
+      <div class="box 1 ">
+              <a> <img src="{{url_for('static',filename=user.photo)}}" height="200px" width="200px" /></a>
+              <a><a href="{{ url_for('ville_indiv',name=user.name) }}">{{user.name}}</a>
+             </div>
+              {% endfor %}
+
+  </div>
+
+
+<footer>
+    <p>
+      Copyright &copy; 2021-2022 - All Right Reserved
+    </p>
+</footer>
 {% endblock %}
