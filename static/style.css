@@ -3,6 +3,7 @@ body#Acceuil {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  text-align : justify;
 }
 
 div.two{
@@ -23,12 +24,12 @@ ul#navbarCity {
   padding: 0;
   overflow: hidden;
   border: 1px solid #e7e7e7;
-  background-color: #6c6eee;
+  background-color: #6495ED;
 }
 
 li.navCity a, form {
   display: block;
-  color: #010101;
+  color: #F8F8FF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,7 +37,7 @@ li.navCity a, form {
 
 li.navCity a.active {
   color: white;
-  background-color: #5255ef;
+  background-color: #6495ED;
 }
 
 li.navCity{
@@ -48,7 +49,7 @@ li.navCity form {
 }
 
 li.navCity a:hover:not(.active) {
-  background-color: #5255ef;
+  background-color: #6495ED;
 }
 
 li.navItem {
@@ -80,13 +81,11 @@ div.info {
     background-color: #DBF9FC;
 }
 
-img{
- max-width: 150px;
- max-height: 150px;
- object-fit: contain;
-}
+
 
 footer{
+
+  bottom: 0;
   background-color: #6495ED;
 }
 
@@ -97,6 +96,11 @@ div.container div{
 
 div.container  div.leftbox{
   vertical-align: top;
+}
+
+div.containeraccueil div{
+  display: inline-block;
+  width: 50%
 }
 
 
