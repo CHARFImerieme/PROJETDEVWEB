@@ -5,20 +5,21 @@
 {% set body_id = 'Villes' %}
 
 {% block content  %}
-<h1>Découvrez les plus belles villes de France : </h1>
+<div style="text-align:center">
+  <h1> <p><font size="+2"> <b>BIENVENUE EN FRANCE:</b> </font></p> </h1>
+</div>
 
 <div class= container>
 
-  <div class="boxleft ">
+  <div style="text-align:center" class="boxleft ">
        {% for user in users %}
-      <div class="box 1 ">
-              <a> <img src="{{url_for('static',filename=user.photo)}}" height="200px" width="200px" /></a>
+      <div style="text-align:center" class="box 1 ">
+              <a> <img src="{{url_for('static',filename=user.photo)}}" height="200px" width="200px" /> </br></a>
               <a><a href="{{ url_for('ville_indiv',name=user.name) }}">{{user.name}}</a>
              </div>
               {% endfor %}
 
   </div>
-
 
 <footer>
     <p>
