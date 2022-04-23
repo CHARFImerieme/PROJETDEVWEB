@@ -28,7 +28,7 @@ Pour accéder à notre page web vous devez utiliser un environnement python, et 
 Ensuite vous devez vous rendre sur votre terminal linux et tapper les commandes suivantes :   
 ```
 $ git clone cle_SSH
-$ cd Project_4BIM/projet
+$ cd PROJETDEVWEB/projet
 $ ./do serve 
 Récupérer l'adresse html qui s'affiche dans le terminal
 Puis suivre les instructions présenté dans la partie tutoriel 
@@ -37,7 +37,5 @@ Puis suivre les instructions présenté dans la partie tutoriel
 Voici la liste des logiciels utilisés durant notre projet : 
 python3: Version 3.7.3
 Flask : Version  2.1.1 $ pip install Flask 
-Voici la liste des logiciels utilisés durant notre projet : 
-python3: Version 3.7.3
-Flask : Version  2.1.1 $ pip install Flask 
+
 
