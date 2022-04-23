@@ -69,7 +69,7 @@ $ cd Project_4BIM/projet
 $ ./do serve 
 Récupérer l'adresse html qui s'affiche dans le terminal
 Puis suivre les instructions présenté dans la partie tutoriel 
-'''
+
 ### Technologies 
 ***
 Voici la liste des logiciels utilisés durant notre projet : 
@@ -78,3 +78,4 @@ Flask : Version  2.1.1 $ pip install Flask
 Voici la liste des logiciels utilisés durant notre projet : 
 python3: Version 3.7.3
 Flask : Version  2.1.1 $ pip install Flask 
+'''
