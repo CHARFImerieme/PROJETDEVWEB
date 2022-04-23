@@ -9,11 +9,11 @@
   <h1> <p><font size="+2"> <b>BIENVENUE EN FRANCE:</b> </font></p> </h1>
 </div>
 
-<div class= container>
+<div style="text-align:center" class= container>
 
   <div style="text-align:center" class="boxleft ">
        {% for user in users %}
-      <div style="text-align:center" class="box 1 ">
+      <div style="text-align:center" class="box 1">
               <a> <img src="{{url_for('static',filename=user.photo)}}" height="200px" width="200px" /> </br></a>
               <a><a href="{{ url_for('ville_indiv',name=user.name) }}">{{user.name}}</a>
              </div>
