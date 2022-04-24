@@ -7,11 +7,11 @@
 4. [Installation et technologies](#technologies)
 5. [Collaboration](#collaboration)
 
-### Description du projet 
+### Description du projet
 ***
 Cette page web a pour objectif de représenter le tourisme en France. Nous avons présenté les 10 villes les plus touristiques de France métropolitaine : Paris, Lyon, Marseille, Toulouse, Bordeaux, Lille, Saint Malo, Nice, Chamonix et Strasbourg. Pour chacune des villes, nous allons représenter la Culture, la Gastronomie, l'Histoire et les activités correspondantes. Nous avons aussi représenter une page contact afin de conserver les coordonnées de notre agence de Tourisme : RTML.  
 
-### Organisation du répertoire 
+### Organisation du répertoire
 ***
 Le dossier templates contient tous les fichiers html qui définissent la structure du logiciel : acceuil,base,contact,ville et ville_indiv.
 Le dossier images_tuto contient les photos nécessaires à la réalisation de notre tutoriel.
