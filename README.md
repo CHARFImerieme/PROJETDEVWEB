@@ -43,7 +43,7 @@ $ cd PROJETDEVWEB/projet
 $ ./do serve
 Récupérer l'adresse html qui s'affiche dans le terminal
 Puis suivre les instructions présenté dans la partie tutoriel
-
+s
 On peut aussi téléchargé le fichier ZIP puis accéder au dossier via le terminal est utilisé la commande suivantes :
 $ ./do serve
 Récupérer l'adresse html qui s'affiche dans le terminal
