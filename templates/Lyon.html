@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Lyon"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE LYON:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul> <li>Activité 1 : Colline de fourvière </li>
+                <li>    Activité 2 : Parc de la tête d’or</li>
+                <li>    Activité 3 : Découvrir l’île barbe</li>
+                <li>    Activité 4 : Visite de lyon en gyropode</li>
+                  <li>  Activité 5 : Visiter les plus belles places de lyon (bellecour, des jacobins, des terreaux</li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <li> Endroit 1 : Lugdunum - Musée et Théâtres romains</li>
+          <li>  Endroit 2 : Auditorium de Lyon - Orchestre national de Lyon (ONL)</li>
+          <li>  Endroit 3 : Musée des Confluences</li>
+          <li>  Endroit 4 : Centre d'Histoire de la Résistance et de la Déportation (CHRD) </li>
+          <li>  Endroit 5 : Musée des beaux arts </li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1 : Les quenelles </li>
+       <li>Plat 2 : La saucisse briochée </li>
+       <li>Plat 3 : La salade lyonnaise </li>
+       <li>Plat 4 : La rosette de lyon </li>
+       <li>Plat 5 : Le saint marcellin</li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}

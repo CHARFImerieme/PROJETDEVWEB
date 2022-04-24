@@ -4,19 +4,15 @@
 from flask import Flask, abort
 from flask import request, make_response, render_template
 
-import data
-import cmds
-
-from config import USERS
+from config import users
+import config
 from api import SITE_API
 
 # ↓ DO NOT MODIFY THIS PART ↓ #############################################
 # init flask app instance                                                 #
 app = Flask(__name__)                                                     #
 # setup with the configuration provided by the user / environment         #
-app.config.from_object('config.Development')                              #
-data.init_app(app)                                                        #
-cmds.init_app(app)                                                        #
+app.config.from_object('config.Development')                              #                                                    #
 app.register_blueprint(SITE_API, url_prefix='/api')                       #
 # ↑ DO NOT MODIFY THIS PART ↑ #############################################
 
@@ -25,7 +21,7 @@ def Accueil():
     app.logger.debug('serving root URL /')
     return render_template('accueil.html')
 
-@app.route('/Villes') 
+@app.route('/Villes')
 def Villes():
     app.logger.debug('serving users URL /users/')
     # The request contains an arguments in the query string
@@ -34,22 +30,73 @@ def Villes():
             return render_template('ville.html', users=search(request))
         else:
             return make_response('No result found',400)
-    return render_template('ville.html',users=USERS)
+    return render_template('ville.html',users=users)
 
 @app.route('/Contact')
 def Contact():
     app.logger.debug('serving root URL /')
     return render_template('contact.html')
 
-@app.route('/VillesInd/<name>')
-def ville_indiv(name):
+
+@app.route('/Paris')
+def Paris():
     app.logger.debug('serving root URL /')
-    return render_template('ville_indiv.html')
+    return render_template('Paris.html')
+
+@app.route('/Bordeaux')
+def Bordeaux():
+    app.logger.debug('serving root URL /')
+    return render_template('Bordeaux.html')
+
+@app.route('/Lille')
+def Lille():
+    app.logger.debug('serving root URL /')
+    return render_template('Lille.html')
+
+@app.route('/ChamonixMontBlanc')
+def ChamonixMontBlanc():
+    app.logger.debug('serving root URL /')
+    return render_template('Chamonix Mont Blanc.html')
+
+@app.route('/Lyon')
+def Lyon():
+    app.logger.debug('serving root URL /')
+    return render_template('Lyon.html')
+
+@app.route('/Marseille')
+def Marseille():
+    app.logger.debug('serving root URL /')
+    return render_template('Marseille.html')
+
+@app.route('/Nice')
+def Nice():
+    app.logger.debug('serving root URL /')
+    return render_template('Nice.html')
+
+@app.route('/Strasbourg')
+def Strasbourg():
+    app.logger.debug('serving root URL /')
+    return render_template('Strasbourg.html')
+
+@app.route('/Toulouse')
+def Toulouse():
+    app.logger.debug('serving root URL /')
+    return render_template('Toulouse.html')
+
+@app.route('/SaintMalo')
+def SaintMalo():
+    app.logger.debug('serving root URL /')
+    return render_template('Saint Malo.html')
+
+@app.route('/ville/<user>')
+def profile(user):
+    ville=user+'.html'
+    app.logger.debug(ville)
+    return render_template(ville,users=users)
 
 def search(request):
     app.logger.debug(request.args)
     pattern=request.args.get('pattern')
-    users=USERS
     found_user = []
     for user in users :
         if pattern.upper() in user['name'].upper():

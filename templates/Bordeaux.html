@@ -1,0 +1,52 @@
+
+
+
+
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Bordeaux"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE BORDEAUX:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul><li>Activité 1: Visiter les quartiers St-Pierre et St-Michel et la Place des Quinconces</li>
+                  <li>    Activité 2: Découvrir la Garonne : promenade sur les quais, balades en bateau, jet-ski, ponts… </li>
+                  <li>    Activité 3: Se balader dans les espaces verts : Jardin Public, Parc Bordelais… </li>
+                  <li>    Activité 4: Admirer les expositions des Bassins de Lumières dans l'ancienne base sous-marine </li>
+                  <li>    Activité 5: Partir à la découverte du bassin d’Arcachon et de la Dune du Pilat</li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <ul> <li>  Endroit 1: La cité du vin </li>
+            <li>   Endroit 2: Le musée d’art contemporain </li>
+            <li>   Endroit 3: Le festival Relache </li>
+            <li>   Endroit 4: Le palais Gallien : vestige de l’époque gallo-romaine </li>
+            <li>   Endroit 5: Pont de pierre, le plus vieux pont de Bordeaux </li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1: Le canelé</li>
+                      <li>    Plat 2: La lamproie à la Bordelaise</li>
+                      <li>    Plat 3: Le boeuf de Bazas</li>
+                      <li>    Plat 4: Les huîtres d’Arcachon</li>
+                      <li>    Plat 5: Le grenier médocain </li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}

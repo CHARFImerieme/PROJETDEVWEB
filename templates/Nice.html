@@ -1,0 +1,49 @@
+
+
+
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Nice"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE NICE:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul> <li>Activité 1 : Demie journée à Monaco et Monte-Carlo et Saint Tropez </li>
+                <li>  Activité 2 : Promenade des anglais </li>
+                <li>  Actvité 3 : Grand Canyon d'Europe et champs de lavande </li>
+                <li>  Activité 4 : Croisière de 1h vers la baie de Villefranche</li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <li> Endroit 1: le Palais Lascaris </li>
+              <li>     Endroit 2: la Cathédrale Sainte-Réparate </li>
+              <li>     Endroit 3: l'ancien Sénat </li>
+              <li>     Endroit 4: le Palais des Rois Sardes </li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1 : La Socca
+       <li> Plat 2 : pissaladière
+       <li> Plat 3 : La coca
+       <li> Plat 4 : le pan bagant
+       <li> Plat 5 : salade nicoise</li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}

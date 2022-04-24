@@ -1,0 +1,47 @@
+
+
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Saint Malo"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE SAINT MALO:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul> <li>Activité 1 : Grand aquarium de Saint Malo</li>
+                  <li>    Activité 2 : Fort National</li>
+                    <li>  Activité 3 : Grand Bé</li>
+                    <li>  Activité 4 : Tour Solidor</li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <li>Endroit 1 :Les remparts de Saint Malo </li>
+              <li>Endroit 2 :Plage du Sillon</li>
+              <li><li>Endroit 3 : La cité d'Aleth</li>
+              <li>Endroit 4 : Demeure de Corsaire</li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1 : Les galettes</li>
+      <li> Plat 2 : Les crepes</li>
+      <li> Plat 3 : Le Kouign Amann</li>
+      <li> Plat 4 : Les huîtres de Cancale</li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Chamonix Mont Blanc"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE CHAMONIX:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul><li>  Activité 1 : Ski   </li>
+                <li>     Activité 2 :Cascades de glaces  </li>
+                <li>     Activité 3 : Randonnees  </li>
+                <li>     Activité 4: Spa Thermal </li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <ul> <li> Activité 1: l'église Saint-Michel
+        <li> Activité 2: le glacier des Bossons </li>
+        <li> Activité 3 : l'Aiguille du Midi  </li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1: La Raclette  </li>
+       <li> Plat 2 : La Tartiflette  </li>
+       <li> Plat 3 : Les Crozets de Savoie  </li>
+       <li> Plat 4: La croute Savoyard </li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+
+
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Paris"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE PARIS:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul> <li>Activité 1: Monter au sommet de la tour eiffel
+            <li>  Activité 2: Visiter le musée du Louvres </li>
+              <li>    Activité 3: Faire une croisière en bateau mouche </li>
+              <li>    Activité 4: Jardin du luxembourg</li>
+                <li>  Activité 5: Disneyland paris</li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <li> Endroit 1: La tour Eiffel </li>
+              <li>     Endroit 2: La basilique du Sacré Coeur </li>
+              <li>     Endroit 3: L’arc de Triomphe </li>
+              <li>     Endroit 4: Notre Dame de Paris </li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1: Baguette</li>
+      <li> Plat 2: Soupe à l’oignon</li>
+      <li> Plat 3: Croissant</li>
+      <li> Plat 4: Les bières de paris</li>
+      <li> Plat 5: Le macaron</li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}

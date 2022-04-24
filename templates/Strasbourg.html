@@ -1,0 +1,50 @@
+
+
+{% extends "base.html" %}
+{% set page_title = 'Ville' %}
+{% set body_id = 'Villes' %}
+
+{% block content %}
+{% for user in users %}
+  {% if user.name=="Strasbourg"%}
+<div style="text-align:center" class=navbarCity>
+<h1> <p><font size="+2"> <b>BIENVENUE DANS LA VILLE DE STRASBOURG:</b> </font></p> </h1>
+  <div style="text-align:center" class="div1">
+    <h1> <p><font size="+1"> <b>Les activités proposées: </b> </font></p> </h1>
+    <ul><li>Activité 1 : Parc de l’orangerie </li>
+        <li> Activité 2 : Une croisière à bord du Batorama</li>
+        <li>  Activité 3 : Le Planétarium de Strasbourg</li>
+        <li>  Activité 4 : la Montagne des singes</li>
+        <li>  Activité 5 : Une séance d’escalade au Block'Out</li>
+    </ul>
+  </div>
+
+  <div style="text-align:center"class="div2">
+    <h1> <p><font size="+1"> <b>Les endroits culturels proposés: </b> </font></p> </h1>
+    <ul> <li>  Endroit 1 : La petite france </li>
+      <li>  Endroit 2 : Cathédrale notre dame de strasbourg </li>
+      <li>  Endroit 3 : Place kléber </li>
+      <li>  Endroit 4 : Les berges de l’Ill</li>
+      <li>  Endroit 5 : Musée zoologique de strasbourg </li>
+   </ul>
+  </div>
+
+  <div style="text-align:center" class="div3">
+    <h1> <p><font size="+1"> <b>L'historique de la ville: </b> </font></p> </h1>
+        <a>{{user.Historique}}</a>
+  </div>
+
+  <div style="text-align:center" class="div4">
+    <h1> <p><font size="+1"> <b>Les plats proposées:  </b> </font></p> </h1>
+    <ul> <li>  Plat 1:  La choucroute </li>
+      <li>Plat 2 : Le kouglehopf </li>
+      <li>Plat 3 : Vins d’alsace </li>
+      <li>Plat 4 : la flammekueche</li>
+      <li>Plat 5 : bretzel  </li>
+    </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+</div>
+
+{% endblock %}
