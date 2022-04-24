@@ -24,7 +24,7 @@ App.py App.py et config.py contiennent les fichiers python qui permettent l'éxe
 ***
 Dans un premier temps, nous avons la représentation de notre page d'acceuil 
 <p align="center">
-<img src="téléchargements/image_a" alt="1" width="400"/>
+<img src="Téléchargements/image_a" alt="1" width="400"/>
 </p>
 
 
