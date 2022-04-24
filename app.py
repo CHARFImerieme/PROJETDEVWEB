@@ -44,7 +44,7 @@ def Contact():
 @app.route('/VillesInd/<name>')
 def ville_indiv(name):
     app.logger.debug('serving root URL /')
-    return render_template('ville_indiv.html')
+    return render_template('ville_indiv.html',villeName=name)
 
 @app.route('/VillesInd/<name>/gastro')
 def gastro(name):
