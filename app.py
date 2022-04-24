@@ -46,6 +46,11 @@ def ville_indiv(name):
     app.logger.debug('serving root URL /')
     return render_template('ville_indiv.html')
 
+@app.route('/VillesInd/<name>/gastro')
+def gastro(name):
+    app.logger.debug('serving root URL /')
+    return render_template('gastro.html')
+
 def search(request):
     app.logger.debug(request.args)
     pattern=request.args.get('pattern')
