@@ -15,11 +15,17 @@ Cette page web a pour objectif de représenter le tourisme en France. Nous avons
 
 ### Repository Organization
 *** 
-Le dossier "à verifier à la fin du projet" contient tous les dossiers qui définissent la structure du logiciel. Ce projet de dossier contient le fichier python principal qui définit l’exécution du logiciel. Il contient également : ## partie a compléter à la fin du projet avec toutes les classes 
+Le dossier templates contient tous les fichiers html qui définissent la structure du logiciel : acceuil,base,contact,ville et ville_indiv. 
+Le dossier static contient les images que nous avons utilisés au cours de notre projet 
+App.py App.py et config.py contiennent les fichiers python qui permettent l'éxecution de notre logiciel.
+
 
 ### Tutoriel
 ***
-a la fin du projet avec les photos 
+Dans un premier temps, nous avons la représentation de notre page d'acceuil 
+<p align="center">
+<img src="téléchargements/image_a" alt="1" width="400"/>
+</p>
 
 
 ### Installation et Technologies 
